@@ -1,0 +1,104 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Privacy Policy — SUPKA</title>
+  <style>
+    :root {
+      color-scheme: dark light;
+      --bg: #0b0d0f;
+      --card: #15181c;
+      --text: #f2f4f7;
+      --muted: #9aa3ad;
+      --accent: #2ec4ff;
+      --line: rgba(255,255,255,0.08);
+    }
+    @media (prefers-color-scheme: light) {
+      :root {
+        --bg: #f6f7f9;
+        --card: #ffffff;
+        --text: #121417;
+        --muted: #5c6670;
+        --line: rgba(0,0,0,0.08);
+      }
+    }
+    * { box-sizing: border-box; }
+    body {
+      margin: 0;
+      font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Helvetica, Arial, sans-serif;
+      background: var(--bg);
+      color: var(--text);
+      line-height: 1.55;
+    }
+    main {
+      max-width: 720px;
+      margin: 0 auto;
+      padding: 40px 20px 72px;
+    }
+    .card {
+      background: var(--card);
+      border: 1px solid var(--line);
+      border-radius: 18px;
+      padding: 28px 24px;
+    }
+    h1 { font-size: 1.85rem; margin: 0 0 8px; letter-spacing: -0.02em; }
+    .meta { color: var(--muted); margin-bottom: 28px; font-size: 0.95rem; }
+    h2 { font-size: 1.15rem; margin: 28px 0 10px; }
+    p, li { color: var(--text); }
+    ul { padding-left: 1.2rem; }
+    li { margin: 6px 0; }
+    a { color: var(--accent); }
+    .nav { margin-bottom: 18px; font-size: 0.95rem; }
+    .nav a { text-decoration: none; margin-right: 14px; }
+  </style>
+</head>
+<body>
+  <main>
+    <div class="nav">
+      <a href="privacy.html">Privacy Policy</a>
+      <a href="terms.html">Terms of Service</a>
+    </div>
+    <article class="card">
+      <h1>Privacy Policy for SUPKA</h1>
+      <p class="meta">Last updated: July 19, 2026</p>
+
+      <p>At SUPKA, we value your privacy. This Privacy Policy explains how we collect, use, and protect your information when you use our mobile application.</p>
+
+      <h2>1. Information We Collect</h2>
+      <ul>
+        <li><strong>Location Data:</strong> We collect precise GPS location data on your device to record your paddling routes and display your position on the map during an active workout. Full route tracks are stored locally on your phone.</li>
+        <li><strong>Account Information:</strong> When you sign in, we collect your basic profile information (such as your name and email address) provided by your chosen authentication provider (e.g., Google).</li>
+        <li><strong>Workout Summaries:</strong> If you use cloud sync, we store workout summary metrics (distance, duration, speeds, and similar stats). We do not upload your raw GPS track to our cloud database.</li>
+        <li><strong>Photos:</strong> Optional workout photos may be stored in object storage (Cloudflare R2) under your account.</li>
+        <li><strong>Usage Data:</strong> We may collect diagnostic information to improve app stability and performance, processed through secure third-party services (for example Firebase).</li>
+      </ul>
+
+      <h2>2. How We Use Your Information</h2>
+      <p>Your data is used solely to:</p>
+      <ul>
+        <li>Provide accurate tracking and mapping functionality on your device.</li>
+        <li>Enable Liveguard: when you choose, SUPKA opens the system share sheet so you can send a Maps location pin to a contact via Messages, WhatsApp, or another app you select. Liveguard does not stream your location to a SUPKA live-tracking server.</li>
+        <li>Improve app performance and fix technical issues.</li>
+      </ul>
+
+      <h2>3. Data Deletion</h2>
+      <p>You can delete workouts and photos from the app. Cloud summary data associated with your account can be removed when you delete your account or request deletion. Liveguard shares are delivered by the messaging apps you use; SUPKA does not keep a separate live-tracking copy of those shares on our servers.</p>
+
+      <h2>4. Your Rights</h2>
+      <p>You have the right to request access to your personal data or the deletion of your account and associated data at any time via the app settings.</p>
+
+      <h2>5. Contact</h2>
+      <p>If you have any questions, please contact us at <a href="mailto:avi.apps.labs@gmail.com">avi.apps.labs@gmail.com</a>.</p>
+
+      <h2>6. Apple Health Integration</h2>
+      <p>SUPKA optionally integrates with Apple Health (HealthKit).</p>
+      <ul>
+        <li><strong>Data Collection:</strong> With your explicit permission, we read and write workout data (such as active calories, distance, and duration) to the Apple Health app.</li>
+        <li><strong>Purpose:</strong> This allows you to view your SUPKA paddling sessions within the Apple Health ecosystem and ensures your activities contribute to your daily fitness goals (Activity Rings).</li>
+        <li><strong>Control:</strong> You can revoke access to HealthKit at any time through your iOS Settings → Health → Data Access &amp; Devices. We do not share your health data with any third parties.</li>
+      </ul>
+    </article>
+  </main>
+</body>
+</html>
