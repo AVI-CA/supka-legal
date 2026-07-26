@@ -45,6 +45,7 @@
     h1 { font-size: 1.85rem; margin: 0 0 8px; letter-spacing: -0.02em; }
     .meta { color: var(--muted); margin-bottom: 28px; font-size: 0.95rem; }
     h2 { font-size: 1.15rem; margin: 28px 0 10px; }
+    h3 { font-size: 1.02rem; margin: 18px 0 8px; }
     p, li { color: var(--text); }
     ul { padding-left: 1.2rem; }
     li { margin: 6px 0; }
@@ -61,42 +62,65 @@
     </div>
     <article class="card">
       <h1>Privacy Policy for SUPKA</h1>
-      <p class="meta">Last updated: July 19, 2026</p>
+      <p class="meta">Last updated: July 26, 2026</p>
 
-      <p>At SUPKA, we value your privacy. This Privacy Policy explains how we collect, use, and protect your information when you use our mobile application.</p>
+      <p>At SUPKA, we value your privacy. This Privacy Policy explains how we collect, use, and protect your information when you use our mobile applications on iPhone, iPad, Android, and the optional Apple Watch companion.</p>
 
       <h2>1. Information We Collect</h2>
       <ul>
-        <li><strong>Location Data:</strong> We collect precise GPS location data on your device to record your paddling routes and display your position on the map during an active workout. Full route tracks are stored locally on your phone.</li>
-        <li><strong>Account Information:</strong> When you sign in, we collect your basic profile information (such as your name and email address) provided by your chosen authentication provider (e.g., Google).</li>
-        <li><strong>Workout Summaries:</strong> If you use cloud sync, we store workout summary metrics (distance, duration, speeds, and similar stats). We do not upload your raw GPS track to our cloud database.</li>
-        <li><strong>Photos:</strong> Optional workout photos may be stored in object storage (Cloudflare R2) under your account.</li>
-        <li><strong>Usage Data:</strong> We may collect diagnostic information to improve app stability and performance, processed through secure third-party services (for example Firebase).</li>
+        <li><strong>Location Data:</strong> We collect precise GPS location on your device to record paddling routes and show your position on the map during an active workout. Full route tracks are stored locally on your phone by default.</li>
+        <li><strong>Account Information:</strong> When you sign in with Apple or Google, we receive basic profile information (such as name and email) from that provider.</li>
+        <li><strong>Workout Summaries:</strong> If you use SUPKA cloud sync (Pro), we store workout summary metrics (distance, duration, speeds, and similar stats). We do not upload your raw GPS track to our cloud database.</li>
+        <li><strong>Photos:</strong> Workout photos you add are stored on your device. Optional cloud photo storage may be offered later; if enabled, that would be disclosed in-app and governed by this policy.</li>
+        <li><strong>Backups you choose:</strong> You may back up workouts and settings to <strong>iCloud</strong> or <strong>Google Drive</strong> using your own Apple / Google account quota. Those backups are controlled by you and subject to Apple’s or Google’s terms for that storage.</li>
+        <li><strong>Usage / diagnostics:</strong> We may process diagnostic information to improve stability (for example via Firebase).</li>
       </ul>
+
+      <h3>Apple Watch companion</h3>
+      <p>If you install SUPKA on Apple Watch, with your permission the Watch app may use:</p>
+      <ul>
+        <li><strong>Heart rate and workout session data</strong> via HealthKit / workout APIs during a session</li>
+        <li><strong>Motion sensors</strong> to estimate paddle cadence (strokes per minute)</li>
+        <li><strong>Compass / heading</strong> to show direction on the workout screen</li>
+        <li><strong>WatchConnectivity</strong> to send live metrics (such as heart rate, cadence, energy, and session controls) to the paired iPhone</li>
+      </ul>
+      <p>This Watch data is used to power your live session and the workout saved on your phone. We do not sell health or sensor data.</p>
+
+      <h3>Weather and water conditions</h3>
+      <p>On iPhone, SUPKA may use your approximate location to show weather and water context:</p>
+      <ul>
+        <li><strong>Apple WeatherKit</strong> (primary on iOS when available), with <a href="https://weatherkit.apple.com/legal-attribution.html">Apple’s legal attribution</a></li>
+        <li><strong>Open-Meteo</strong> as a fallback air-weather source</li>
+        <li>Public water / ocean data providers (for example USGS, NOAA) where available</li>
+      </ul>
+      <p>Weather and water information is for convenience only and is not a substitute for official marine forecasts or safety advice.</p>
 
       <h2>2. How We Use Your Information</h2>
-      <p>Your data is used solely to:</p>
+      <p>Your data is used to:</p>
       <ul>
-        <li>Provide accurate tracking and mapping functionality on your device.</li>
-        <li>Enable Liveguard: when you choose, SUPKA opens the system share sheet so you can send a Maps location pin to a contact via Messages, WhatsApp, or another app you select. Liveguard does not stream your location to a SUPKA live-tracking server.</li>
-        <li>Improve app performance and fix technical issues.</li>
+        <li>Provide tracking, mapping, statistics, and Watch companion features on your devices</li>
+        <li>Enable <strong>Liveguard</strong>: when you choose, SUPKA opens the system share sheet so you can send a Maps location pin via Messages, WhatsApp, or another app you select. Liveguard does not stream your location to a SUPKA live-tracking server</li>
+        <li>Sync Pro cloud summaries when you are signed in and entitled</li>
+        <li>Improve app performance and fix technical issues</li>
       </ul>
 
-      <h2>3. Data Deletion</h2>
-      <p>You can delete workouts and photos from the app. Cloud summary data associated with your account can be removed when you delete your account or request deletion. Liveguard shares are delivered by the messaging apps you use; SUPKA does not keep a separate live-tracking copy of those shares on our servers.</p>
+      <h2>3. Soft trial, Pro, and payments</h2>
+      <p>SUPKA may offer a time-limited soft trial of Pro features and optional paid plans (monthly, yearly, or lifetime). Purchases on Apple platforms are processed by Apple; we do not receive your full payment card details. Entitlement status may be stored on device and/or with your account so Pro features work across reinstalls where supported.</p>
 
-      <h2>4. Your Rights</h2>
-      <p>You have the right to request access to your personal data or the deletion of your account and associated data at any time via the app settings.</p>
+      <h2>4. Data Deletion</h2>
+      <p>You can delete workouts and photos from the app. Cloud summary data associated with your account can be removed when you delete your account or request deletion. Liveguard shares are delivered by the messaging apps you use; SUPKA does not keep a separate live-tracking copy of those shares on our servers. You can revoke HealthKit access in iOS Settings → Health → Data Access &amp; Devices, and remove Watch permissions in watchOS / iPhone Settings.</p>
 
-      <h2>5. Contact</h2>
-      <p>If you have any questions, please contact us at <a href="mailto:avi.apps.labs@gmail.com">avi.apps.labs@gmail.com</a>.</p>
+      <h2>5. Your Rights</h2>
+      <p>You have the right to request access to your personal data or the deletion of your account and associated data at any time via the app settings or by contacting us.</p>
 
-      <h2>6. Apple Health Integration</h2>
+      <h2>6. Contact</h2>
+      <p>Questions: <a href="mailto:avi.apps.labs@gmail.com">avi.apps.labs@gmail.com</a></p>
+
+      <h2>7. Apple Health Integration</h2>
       <p>SUPKA optionally integrates with Apple Health (HealthKit).</p>
       <ul>
-        <li><strong>Data Collection:</strong> With your explicit permission, we read and write workout data (such as active calories, distance, and duration) to the Apple Health app.</li>
-        <li><strong>Purpose:</strong> This allows you to view your SUPKA paddling sessions within the Apple Health ecosystem and ensures your activities contribute to your daily fitness goals (Activity Rings).</li>
-        <li><strong>Control:</strong> You can revoke access to HealthKit at any time through your iOS Settings → Health → Data Access &amp; Devices. We do not share your health data with any third parties.</li>
+        <li><strong>Data:</strong> With your permission, we may read and write workout-related data (such as active energy, distance, duration, and heart-rate related workout data) so sessions appear in Apple Health and contribute to Activity Rings where applicable.</li>
+        <li><strong>Control:</strong> Revoke access anytime in iOS Settings → Health → Data Access &amp; Devices. We do not sell or share your health data with third-party advertisers.</li>
       </ul>
     </article>
   </main>
